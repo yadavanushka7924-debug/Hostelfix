@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HostelFix — Student Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">H</span>
+                Hostel<span>Fix</span>
+            </div>
+
+            <div class="nav-title">
+                Student
+            </div>
+
+            <nav class="nav">
+
+                <a class="active" href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+
+                <a href="report.html">
+                    📝 Report Complaint
+                </a>
+
+                <a href="#complaints">
+                    📋 My Complaints
+                </a>
+
+                <a href="#notifications">
+                    🔔 Notifications
+                </a>
+
+                <a href="#profile">
+                    👤 My Profile
+                </a>
+
+            </nav>
+
+            <div class="logout">
+
+                <a href="landing.html">
+                    ↩ Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Top Bar -->
+            <header class="topbar">
+
+                <h2>
+                    Student Dashboard
+                </h2>
+
+                <div class="user">
+
+                    <span>
+                        Arpita Thakur
+                    </span>
+
+                    <span class="avatar">
+                        AT
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard Content -->
+            <section class="content">
+
+
+                <!-- Welcome Section -->
+                <div class="welcome">
+
+                    <div>
+
+                        <h1>
+                            Welcome back, Arpita!
+                        </h1>
+
+                        <p>
+                            Keep track of your hostel complaints
+                            and their current status.
+                        </p>
+
+                    </div>
+
+                    <a class="btn white" href="report.html">
+                        + Report an Issue
+                    </a>
+
+                </div>
+
+
+                <!-- Statistics -->
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <div class="num">
+                            08
+                        </div>
+
+                        <p>
+                            Total Complaints
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="num">
+                            02
+                        </div>
+
+                        <p>
+                            Pending
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="num">
+                            01
+                        </div>
+
+                        <p>
+                            In Progress
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="num">
+                            05
+                        </div>
+
+                        <p>
+                            Resolved
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Dashboard Grid -->
+                <div class="grid">
+
+
+                    <!-- Recent Complaints -->
+                    <div class="card" id="complaints">
+
+                        <div class="card-head">
+
+                            <h3>
+                                Recent Complaints
+                            </h3>
+
+                            <a
+                                class="view-link"
+                                href="#complaints">
+                                View all
+                            </a>
+
+                        </div>
+
+
+                        <!-- Complaint 1 -->
+                        <div class="complaint">
+
+                            <div class="icon">
+                                💧
+                            </div>
+
+                            <div class="c-info">
+
+                                <div class="c-title">
+                                    Water leakage in bathroom
+                                </div>
+
+                                <div class="meta">
+                                    HF1025 · Room 204 · 23 Sep 2026
+                                </div>
+
+                            </div>
+
+                            <span class="badge working">
+                                In Progress
+                            </span>
+
+                        </div>
+
+
+                        <!-- Complaint 2 -->
+                        <div class="complaint">
+
+                            <div class="icon">
+                                💡
+                            </div>
+
+                            <div class="c-info">
+
+                                <div class="c-title">
+                                    Power issue in Block B
+                                </div>
+
+                                <div class="meta">
+                                    HF1024 · Block B · 22 Sep 2026
+                                </div>
+
+                            </div>
+
+                            <span class="badge pending">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <!-- Complaint 3 -->
+                        <div class="complaint">
+
+                            <div class="icon">
+                                📶
+                            </div>
+
+                            <div class="c-info">
+
+                                <div class="c-title">
+                                    Wi-Fi not working
+                                </div>
+
+                                <div class="meta">
+                                    HF1023 · Room 108 · 20 Sep 2026
+                                </div>
+
+                            </div>
+
+                            <span class="badge resolved">
+                                Resolved
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quick Actions -->
+                    <div class="card">
+
+                        <div class="card-head">
+
+                            <h3>
+                                Quick Actions
+                            </h3>
+
+                        </div>
+
+
+                        <div class="quick">
+
+                            <a href="report.html">
+                                📝 Submit a new complaint
+                            </a>
+
+                            <a href="#complaints">
+                                📋 Check complaint status
+                            </a>
+
+                            <a href="#profile">
+                                👤 Update profile
+                            </a>
+
+                            <a href="#notifications">
+                                🔔 View notifications
+                            </a>
+
+                        </div>
+
+
+                        <div class="notice">
+
+                            Tip: Select the correct category
+                            and priority when reporting an issue.
+                            This helps the hostel team handle
+                            complaints efficiently.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

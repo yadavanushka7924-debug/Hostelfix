@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7fb;
+    color: #20283a;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Container */
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+
+/* Header */
+
+.top {
+    height: 72px;
+    background: #fff;
+    border-bottom: 1px solid #e5e7ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #202752;
+}
+
+.logo span {
+    color: #4f46e5;
+}
+
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-size: 13px;
+    color: #687184;
+}
+
+.nav a:hover {
+    color: #4f46e5;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.primary {
+    background: #4f46e5;
+    color: #fff;
+}
+
+.outline {
+    border: 1px solid #dfe2ea;
+    background: #fff;
+    color: #4f46e5;
+}
+
+
+/* Hero Section */
+
+.hero {
+    padding: 75px 0;
+    background: linear-gradient(135deg, #f8f8ff, #eef0ff);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #e8eaff;
+    color: #4f46e5;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: 1.12;
+    color: #202752;
+    margin: 18px 0;
+}
+
+.hero p {
+    font-size: 15px;
+    color: #6d7688;
+    max-width: 570px;
+    margin-bottom: 24px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* Dashboard Preview */
+
+.preview {
+    background: #fff;
+    border: 1px solid #dfe2ec;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 14px 30px rgba(40, 45, 80, 0.08);
+}
+
+.preview-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.muted {
+    font-size: 10px;
+    color: #8a92a1;
+    font-weight: 400;
+}
+
+
+/* Dashboard Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.small-card {
+    border: 1px solid #eceef3;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.small-card strong {
+    display: block;
+    font-size: 20px;
+}
+
+.small-card span {
+    font-size: 9px;
+    color: #7e8796;
+}
+
+
+/* Issues */
+
+.issue {
+    border: 1px solid #eceef3;
+    border-radius: 8px;
+    padding: 11px;
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.issue small {
+    display: block;
+    color: #8a92a1;
+    margin-top: 3px;
+}
+
+
+/* Statistics */
+
+.stats {
+    background: #fff;
+    padding: 28px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.stat {
+    border-right: 1px solid #e5e7ed;
+}
+
+.stat:last-child {
+    border: 0;
+}
+
+.stat strong {
+    font-size: 24px;
+    color: #4f46e5;
+}
+
+.stat p {
+    font-size: 10px;
+    color: #7d8594;
+}
+
+
+/* Common Sections */
+
+.section {
+    padding: 62px 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    font-size: 29px;
+    color: #202752;
+}
+
+.heading p {
+    font-size: 12px;
+    color: #7a8292;
+    margin-top: 5px;
+}
+
+
+/* Four Column Grid */
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+
+/* Feature Boxes */
+
+.box {
+    background: #fff;
+    border: 1px solid #e3e6ed;
+    border-radius: 10px;
+    padding: 21px;
+}
+
+.icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: #eef0ff;
+    color: #4f46e5;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.box h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.box p {
+    font-size: 11px;
+    color: #778091;
+}
+
+
+/* Complaint Categories */
+
+.category {
+    background: #fff;
+    border: 1px solid #e3e6ed;
+    border-radius: 9px;
+    padding: 17px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.category span {
+    display: block;
+    font-size: 18px;
+    color: #4f46e5;
+    margin-bottom: 7px;
+}
+
+
+/* CTA */
+
+.cta {
+    background: #252951;
+    color: #fff;
+    text-align: center;
+    padding: 48px 0;
+}
+
+.cta h2 {
+    font-size: 28px;
+}
+
+.cta p {
+    font-size: 12px;
+    color: #c9cce0;
+    margin: 6px 0 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #171936;
+    color: #b9bdd2;
+    padding: 28px 0;
+    font-size: 10px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .nav a:not(.btn) {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 560px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .cards,
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid4 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-row {
+        display: block;
+    }
+
+    .footer-row span {
+        display: block;
+        margin: 5px 0;
+    }
+}

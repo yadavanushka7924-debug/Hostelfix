@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HostelFix — Report Complaint</title>
+
+    <link rel="stylesheet" href="report.css">
+
+</head>
+
+<body>
+
+
+    <!-- Top Header -->
+    <header class="top">
+
+        <a href="dashboard.html" class="logo">
+
+            <span class="logo-icon">H</span>
+
+            Hostel<span>Fix</span>
+
+        </a>
+
+
+        <div class="user">
+
+            <span>
+                Arpita Thakur
+            </span>
+
+            <span class="avatar">
+                AT
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+
+        <!-- Back Button -->
+        <a href="dashboard.html" class="back">
+            ← Back to Dashboard
+        </a>
+
+
+        <!-- Page Heading -->
+        <div class="head">
+
+            <h1>
+                Report a Hostel Complaint
+            </h1>
+
+            <p>
+                Tell us what went wrong. Provide clear details
+                so the issue can be resolved quickly.
+            </p>
+
+        </div>
+
+
+
+        <!-- Complaint Form Card -->
+        <div class="form-card">
+
+            <form action="dashboard.html">
+
+
+                <div class="grid">
+
+
+                    <!-- Complaint Category -->
+                    <div class="group full">
+
+                        <label class="label">
+                            Complaint Category *
+                        </label>
+
+
+                        <div class="categories">
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    required
+                                >
+                                💡 Electricity
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                💧 Plumbing / Water
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                📶 Wi-Fi / Internet
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                🪑 Furniture
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                🧹 Cleaning
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                🍽️ Mess
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                🛡️ Security
+                            </label>
+
+
+                            <label class="cat">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                >
+                                🔧 Other
+                            </label>
+
+                        </div>
+
+
+                        <span class="helper">
+                            Choose the category that best describes your problem.
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Hostel / Block -->
+                    <div class="group">
+
+                        <label class="label">
+                            Hostel / Block *
+                        </label>
+
+                        <select
+                            class="select"
+                            required
+                        >
+
+                            <option value="">
+                                Select hostel
+                            </option>
+
+                            <option>
+                                Hostel A — Girls
+                            </option>
+
+                            <option>
+                                Hostel B — Boys
+                            </option>
+
+                            <option>
+                                Hostel C — Mixed
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Room Number -->
+                    <div class="group">
+
+                        <label class="label">
+                            Room Number *
+                        </label>
+
+                        <input
+                            class="input"
+                            type="text"
+                            required
+                            placeholder="e.g. 204"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Complaint Title -->
+                    <div class="group full">
+
+                        <label class="label">
+                            Complaint Title *
+                        </label>
+
+                        <input
+                            class="input"
+                            type="text"
+                            required
+                            placeholder="e.g. Water leakage in bathroom"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Problem Description -->
+                    <div class="group full">
+
+                        <label class="label">
+                            Describe the Problem *
+                        </label>
+
+                        <textarea
+                            class="textarea"
+                            required
+                            placeholder="Explain the issue clearly, including where it happened and how long you have been facing it."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- Priority -->
+                    <div class="group full">
+
+                        <label class="label">
+                            Priority *
+                        </label>
+
+
+                        <div class="priority">
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="priority"
+                                    value="Low"
+                                >
+
+                                Low
+
+                            </label>
+
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="priority"
+                                    value="Medium"
+                                    checked
+                                >
+
+                                Medium
+
+                            </label>
+
+
+                            <label>
+
+                                <input
+                                    type="radio"
+                                    name="priority"
+                                    value="High"
+                                >
+
+                                High
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Photo Upload -->
+                    <div class="group full">
+
+                        <label class="label">
+
+                            Attach a Photo
+
+                            <span class="helper">
+                                (optional)
+                            </span>
+
+                        </label>
+
+
+                        <div class="upload">
+
+                            📎 Add a photo if it helps explain the issue.
+
+                            <br>
+
+                            <input
+                                type="file"
+                                accept="image/*"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Form Actions -->
+                <div class="actions">
+
+                    <a
+                        class="btn cancel"
+                        href="dashboard.html"
+                    >
+                        Cancel
+                    </a>
+
+
+                    <button
+                        class="btn submit"
+                        type="submit"
+                    >
+                        Submit Complaint
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

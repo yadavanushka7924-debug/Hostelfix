@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HostelFix | Login / Register</title>
+
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Left Introduction Section -->
+        <aside class="intro">
+
+            <div class="brand">
+                <div class="brand-mark">H</div>
+                HostelFix
+            </div>
+
+            <div class="intro-main">
+
+                <h1>
+                    Make hostel complaints easier to manage.
+                </h1>
+
+                <p>
+                    Use HostelFix to report everyday hostel issues
+                    and keep a record of what is happening with your complaint.
+                </p>
+
+                <div class="points">
+
+                    <div class="point">
+                        <span class="check">✓</span>
+                        Submit complaints online
+                    </div>
+
+                    <div class="point">
+                        <span class="check">✓</span>
+                        Check complaint status
+                    </div>
+
+                    <div class="point">
+                        <span class="check">✓</span>
+                        Get updates from the hostel
+                    </div>
+
+                    <div class="point">
+                        <span class="check">✓</span>
+                        Give feedback after resolution
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="intro-foot">
+                Student portal · HostelFix · 2026
+            </div>
+
+        </aside>
+
+
+        <!-- Login / Register Section -->
+        <main class="form-side">
+
+            <div class="box">
+
+                <!-- Back to Landing Page -->
+                <a class="back" href="landing.html">
+                    ← Back to HostelFix
+                </a>
+
+
+                <!-- Login Heading -->
+                <div class="heading">
+                    <h2>Welcome back</h2>
+                    <p>Login to continue to your student account.</p>
+                </div>
+
+
+                <!-- Login / Register Tabs -->
+                <div class="tabs">
+
+                    <a class="tab active" href="#login">
+                        Login
+                    </a>
+
+                    <a class="tab" href="#register">
+                        Register
+                    </a>
+
+                </div>
+
+
+                <!-- Login Form -->
+                <form action="dashboard.html" id="login">
+
+                    <div class="field">
+
+                        <label>Email address</label>
+
+                        <input
+                            type="email"
+                            placeholder="student@college.edu"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <label class="remember">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+
+                        <span class="link">
+                            Forgot password?
+                        </span>
+
+                    </div>
+
+
+                    <button class="submit" type="submit">
+                        Login to HostelFix
+                    </button>
+
+                </form>
+
+
+                <div class="switch-text">
+                    Don't have an account?
+                    <a class="link" href="#register">
+                        Create one
+                    </a>
+                </div>
+
+
+                <!-- Register Section -->
+                <div class="register-section" id="register">
+
+                    <div class="heading register-heading">
+
+                        <h2>Create an account</h2>
+
+                        <p>
+                            Register as a hostel student.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Registration Form -->
+                    <form action="dashboard.html">
+
+                        <div class="two">
+
+                            <div class="field">
+
+                                <label>Full name</label>
+
+                                <input
+                                    type="text"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label>Student ID</label>
+
+                                <input
+                                    type="text"
+                                    placeholder="Student ID"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>Email address</label>
+
+                            <input
+                                type="email"
+                                placeholder="student@college.edu"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>Hostel / Block</label>
+
+                            <input
+                                type="text"
+                                placeholder="e.g. Block A"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="two">
+
+                            <div class="field">
+
+                                <label>Password</label>
+
+                                <input
+                                    type="password"
+                                    placeholder="Create password"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label>Confirm password</label>
+
+                                <input
+                                    type="password"
+                                    placeholder="Repeat password"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <label class="remember terms">
+
+                            <input type="checkbox" required>
+
+                            I agree to the basic terms of HostelFix.
+
+                        </label>
+
+
+                        <button class="submit" type="submit">
+                            Create Student Account
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- Admin Link -->
+                <div class="admin">
+
+                    Are you a hostel administrator?
+
+                    <a href="admin-dashboard.html">
+                        Open Admin Dashboard →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
